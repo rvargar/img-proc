@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "img-proc"
+version = "0.1.0"
+description = ""
+authors = ["Robert Varga <robertvarga87@gmail.com>"]
+readme = "README.md"
+packages = [{include = "img_proc"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "1.24.2"
+nvidia-cublas-cu11 = "11.10.3.66"
+nvidia-cuda-nvrtc-cu11 ="11.7.99"
+nvidia-cuda-runtime-cu11 ="11.7.99"
+nvidia-cudnn-cu11 = "8.5.0.96"
+opencv-python = "4.7.0.72"
+torch = "1.13.1"
+torchaudio = "0.13.1"
+torchvision = "0.14.1"
+tornado = "6.2"
+tqdm = "4.65.0"
+PyYAML = "6.0"
+pycuda = "2024.1"
+pandas = "1.5.3"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
